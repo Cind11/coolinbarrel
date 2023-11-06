@@ -49,8 +49,9 @@ namespace coolinbarrel
                     api.World.SpawnParticles(Entity.SplashParticleProps);
                 }
 
-                if (temp > 200 && api.World.Side == EnumAppSide.Client && api.World.ElapsedMilliseconds - lastPlayedSizzlesTotalMs > 10000)
+                if (temp > 200 && api.World.ElapsedMilliseconds - lastPlayedSizzlesTotalMs > 10000)
                 {
+                
                     api.World.PlaySoundAt(new AssetLocation("sounds/sizzle"), Pos.X, Pos.Y, Pos.Z);
                     lastPlayedSizzlesTotalMs = api.World.ElapsedMilliseconds;
                 }
