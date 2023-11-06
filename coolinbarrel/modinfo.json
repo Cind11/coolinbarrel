@@ -1,5 +1,6 @@
 {
     "type": "code",
+    "side": "server",
     "modid": "coolinbarrel",
     "name": "coolinbarrel",
     "authors": [
