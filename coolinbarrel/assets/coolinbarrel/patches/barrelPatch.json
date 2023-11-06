@@ -1,0 +1,15 @@
+[
+  {
+    "file": "game:blocktypes/wood/barrel.json",
+    "op": "add",
+    "path": "/entityBehaviors",
+    "value": [ { "name": "CoolInBarrel" } ]
+  },
+  {
+    "file": "woodbarrels:blocktypes/barrel.json",
+    "op": "add",
+    "path": "/entityBehaviors",
+    "value": [ { "name": "CoolInBarrel" } ],
+    "dependsOn": [ { "modid": "woodbarrels" } ]
+  }
+]

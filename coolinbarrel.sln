@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "CakeBuild\CakeBuild.csproj", "{5F46009A-C403-412F-9E8F-EC91CD3594FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coolinbarrel", "coolinbarrel\coolinbarrel.csproj", "{3AC1A770-AD5E-43B2-B4E1-24C070D7BD20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F46009A-C403-412F-9E8F-EC91CD3594FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F46009A-C403-412F-9E8F-EC91CD3594FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F46009A-C403-412F-9E8F-EC91CD3594FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F46009A-C403-412F-9E8F-EC91CD3594FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC1A770-AD5E-43B2-B4E1-24C070D7BD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC1A770-AD5E-43B2-B4E1-24C070D7BD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC1A770-AD5E-43B2-B4E1-24C070D7BD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC1A770-AD5E-43B2-B4E1-24C070D7BD20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E9845BB-BAB9-49AC-A001-CE55BDDE417D}
+	EndGlobalSection
+EndGlobal

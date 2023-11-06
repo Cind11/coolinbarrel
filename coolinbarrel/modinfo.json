@@ -1,0 +1,13 @@
+{
+    "type": "code",
+    "modid": "coolinbarrel",
+    "name": "coolinbarrel",
+    "authors": [
+        "Cind12"
+    ],
+    "description": "Put your hot metals in a water-filled barrel to cool down.",
+    "version": "0.5",
+    "dependencies": {
+        "game": ""
+    }
+}
