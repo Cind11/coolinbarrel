@@ -2,6 +2,7 @@
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
+using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 
 namespace coolinbarrel
@@ -49,10 +50,17 @@ namespace coolinbarrel
                     api.World.SpawnParticles(Entity.SplashParticleProps);
                 }
 
-                if (temp > 200 && api.World.Side == EnumAppSide.Client && api.World.ElapsedMilliseconds - lastPlayedSizzlesTotalMs > 10000)
+                if (temp > 200 && api.World.ElapsedMilliseconds - lastPlayedSizzlesTotalMs > 10000)
                 {
-                    api.World.PlaySoundAt(new AssetLocation("sounds/sizzle"), Pos.X, Pos.Y, Pos.Z);
-                    lastPlayedSizzlesTotalMs = api.World.ElapsedMilliseconds;
+                    if (api.World.Side == EnumAppSide.Client)
+                    {
+                        api.World.PlaySoundAt(new AssetLocation("sounds/sizzle"), Pos.X, Pos.Y, Pos.Z);
+                        lastPlayedSizzlesTotalMs = api.World.ElapsedMilliseconds;
+                    }
+
+                    if (coolinbarrelModSystem.QuenchBonusMats == null) return;
+                    if (!ArrayExtensions.Contains<string>(coolinbarrelModSystem.QuenchBonusMats, stack?.Collectible?.LastCodePart(0)) || !coolinbarrelModSystem.QuenchEnabled) return;
+                    stack.Attributes.SetBool("quenched", true);
                 }
             }
         }

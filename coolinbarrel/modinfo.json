@@ -6,7 +6,7 @@
         "Cind12"
     ],
     "description": "Put your hot metals in a water-filled barrel to cool down.",
-    "version": "0.5",
+    "version": "0.5.3",
     "dependencies": {
         "game": ""
     }

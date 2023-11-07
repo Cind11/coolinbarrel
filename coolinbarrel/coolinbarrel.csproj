@@ -26,14 +26,13 @@
   </ItemGroup>
 
 <ItemGroup>
-  <Content Include="assets\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-  </Content>
-  <None Remove="assets\coolinbarrel\jsconfig1.json" />
-  <None Remove="assets\coolinbarrel\patches\barrelPatch.json" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="assets\" />
 </ItemGroup>
 
 </Project>
